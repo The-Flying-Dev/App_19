@@ -1,4 +1,5 @@
 ﻿namespace TemperatureConverter;
+
 class Program
 {
     static void Main(string[] args)
@@ -15,7 +16,7 @@ class Program
             float celcius = float.Parse(Console.ReadLine()); // Using Parse to convert into a float
 
             float farenheit = celcius * 1.8f + 32f; // f as the suffix, used for floats
-            
+
             Console.WriteLine("The temperature in Farenheit is " + farenheit);
         }
         else
@@ -24,10 +25,10 @@ class Program
             float farenheit = float.Parse(Console.ReadLine());
 
             /* Since divide takes precedence over Subtraction due to "Operator Precedence"
-              Brackets need to be placed around the Subtraction to make it happen first 
+              Brackets need to be placed around the Subtraction to make it happen first
             */
             float celcius = (farenheit - 32f) / 1.8f; // f as the suffix, used for floats
-            
+
             Console.WriteLine("The temperature in Celcius is " + celcius);
         }
 
